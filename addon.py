@@ -42,7 +42,7 @@ def show_homepage():
 
 @plugin.route('/live/')
 def live_tv():
-    rtmpurl = 'rtsp://158.69.124.9:1935/primeasia/primeasia'
+    rtmpurl = 'rtsp://primeasia.ca:1935/primeasia/primeasia'
     li = xbmcgui.ListItem('PrimeAsiaTV Live')
     xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER).play(rtmpurl, li)
     # Return an empty list so we can test with plugin.crawl() and
